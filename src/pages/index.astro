@@ -4,10 +4,12 @@ import Layout from "../layouts/Layout.astro"
 
 <Layout>
     <div class="introduccion"> 
-        <h1>Tween</h1> <h5>Un tween es el nombre que se le pone a 1 unidad de "Animacion" en GSAP</h5> 
+        <h1>Tween</h1> 
+        <h5>Un tween es el nombre que se le pone a 1 unidad de "Animacion" en GSAP</h5> 
         <h5>En GSAP la sintaxis basica que se usa para las animaciones es: gsap.metodo(".clase-del-elemento", ( propiedades ));</h5> 
+        <br>
         <p>Hay 3 metodos basicos:</p> 
-        <ul> 
+        <ul class="frase"> 
             <li>gsap.to(): le dice el elemento la posicion final, empieza desde la posicion inical del gsap.to(), sino la del css</li> 
             <li>gsap.from(): le dices que al elemento seleccionado empiece donde tu quieras, pero acaba donde las reglas css lo digan</li> 
             <li>gsap.fromTo(): mezlar ambas funcionalidades, le dices al elemento, desde donde empieza y donde acaba, teniando conctrol de que hace</li> 
@@ -16,14 +18,14 @@ import Layout from "../layouts/Layout.astro"
 
     <div class="hero">
         <h1 class="titulo">Aprendiendo GSAP</h1>
-        <p class="subtitulo">Mi primera animación profesional</p>
         <div class="contenedor-cajas">
-            <div class="caja-ejemplo"></div>
-            <div class="caja-ejemplo"></div>
-            <div class="caja-ejemplo"></div>
+            <div class="caja-ejemplo uno"></div>
+            <div class="caja-ejemplo dos"></div>
+            <div class="caja-ejemplo tres"></div>
         </div>
         <button id="boton-animar">¡Animar de nuevo!</button>
     </div>
+    <script src="../animation/gsap-Index.js"></script>
 </Layout>
 
 <style>
