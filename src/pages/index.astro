@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+    <div class="introduccion"> 
+        <h1>Tween</h1> <h5>Un tween es el nombre que se le pone a 1 unidad de "Animacion" en GSAP</h5> 
+        <h5>En GSAP la sintaxis basica que se usa para las animaciones es: gsap.metodo(".clase-del-elemento", ( propiedades ));</h5> 
+        <p>Hay 3 metodos basicos:</p> 
+        <ul> 
+            <li>gsap.to(): le dice el elemento la posicion final, empieza desde la posicion inical del gsap.to(), sino la del css</li> 
+            <li>gsap.from(): le dices que al elemento seleccionado empiece donde tu quieras, pero acaba donde las reglas css lo digan</li> 
+            <li>gsap.fromTo(): mezlar ambas funcionalidades, le dices al elemento, desde donde empieza y donde acaba, teniando conctrol de que hace</li> 
+        </ul> 
+    </div>
+
+    <div class="hero">
+        <h1 class="titulo">Aprendiendo GSAP</h1>
+        <p class="subtitulo">Mi primera animación profesional</p>
+        <div class="contenedor-cajas">
+            <div class="caja-ejemplo"></div>
+            <div class="caja-ejemplo"></div>
+            <div class="caja-ejemplo"></div>
+        </div>
+        <button id="boton-animar">¡Animar de nuevo!</button>
+    </div>
+</Layout>
+
+<style>
+    .introduccion{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .caja-ejemplo {
+        width: 80px;
+        height: 80px;
+        background: cyan;
+        margin: 10px;
+        border-radius: 8px;
+    }
+    .contenedor-cajas {
+        display: flex;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: black;
+    }
+</style>
