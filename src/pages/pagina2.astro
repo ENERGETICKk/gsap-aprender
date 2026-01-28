@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+    <div class="container">
+        <div class="bento-grid">
+            <div class="bloque uno">1</div>
+            <div class="bloque dos">2</div>
+            <div class="bloque tres">3</div>
+            <div class="bloque cuatro">4</div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        width: 70%;
+        height: 50vh;
+        margin: 2rem auto;
+    }
+
+    .bloque {
+        background-color: #444;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .uno { background-color: #7acd83; }
+    .dos { background-color: #b3cd7a; }
+    .tres { background-color: #7aa8cd; }
+    .cuatro { background-color: #cd867a; }
+</style>

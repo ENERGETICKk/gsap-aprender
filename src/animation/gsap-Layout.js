@@ -18,7 +18,7 @@ gsap.from(".nav-links a", {
 })
 
 gsap.from("#logo", {
-    x: -500,
+    y: -500,
     duration: 2,
-    ease: "elastic.out"
+    ease: "power3.out"
 })
