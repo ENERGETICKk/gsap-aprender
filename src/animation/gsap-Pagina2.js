@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+import {gsap} from "gsap";
 
 
 gsap.from(".bento-grid", {
@@ -8,15 +8,26 @@ gsap.from(".bento-grid", {
     ease: "expo.out"
 })
 
+let tl = gsap.timeline()
 
-
-
-let tl = gsap.timeline();
-tl.from(".bloque", {
+tl.from(".uno", {
     y: 200,
-    duration: 1,
-    opacity: 0,
+    duration: .3,
     ease: "power3.out",
-    stagger: 0.3
-});
-
+    opacity: 0
+}).from(".dos",{
+    y: 200,
+    duration: .3,
+    ease: "power3.out",
+    opacity: 0
+}).from(".tres",{
+    y: 200,
+    duration: .3,
+    ease: "power3.out",
+    opacity: 0
+}).from(".cuatro", {
+    y: 200,
+    duration: .3,
+    ease: "power3.out",
+    opacity: 0
+})

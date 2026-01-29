@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+    <main>
+        <div class="container uno">
+            <img src="/genetic.svg" class="moving-img">
+        </div>
+        <div class="container dos"></div>
+        <div class="container tres"></div>
+
+    </main>
+    <script src="../animation/gsap-Pagina3"></script>
+</Layout>
+
+
+<style>
+    main{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        height: 300vh;
+        gap: 100vh;
+
+    }
+
+    img{
+        width: 10rem;
+        height: fit-content;
+    }
+
+    .moving-img{
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    .container{
+        height: 10rem;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    .uno{
+        width: 10rem;
+        border: 5px solid coral;
+        margin: 0 auto;
+        margin: auto auto;
+    }
+
+    .dos{
+        width: 10rem;
+        border: 5px solid coral;
+        margin: 0 10%;
+    }
+
+    .tres{
+        width: 10rem;
+        border: 5px solid coral;
+        margin: 0 70%;
+        
+    }
+</style>
